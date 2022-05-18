@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/addID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/milkCB" />
+
+    <TextView
+        android:id="@+id/itemNameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/itemName"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/milkID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/milk"
+        app:layout_constraintEnd_toEndOf="@+id/itemNameID"
+        app:layout_constraintStart_toStartOf="@+id/itemNameID"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameID" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/fruit"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/eggID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/egg"
+        app:layout_constraintStart_toStartOf="@+id/milkID"
+        app:layout_constraintTop_toBottomOf="@+id/milkID" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/veges"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/beefID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/beef"
+        app:layout_constraintStart_toStartOf="@+id/eggID"
+        app:layout_constraintTop_toBottomOf="@+id/eggID" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/milkED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qtyID" />
+
+    <TextView
+        android:id="@+id/qtyID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="@string/quantity"
+        app:layout_constraintBottom_toTopOf="@+id/milkCB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/checkoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="91dp"
+        android:text="@string/checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/totalID"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:text="@string/total"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutBtn"
+        app:layout_constraintEnd_toStartOf="@+id/valueID"
+        app:layout_constraintStart_toEndOf="@+id/checkoutBtn"
+        app:layout_constraintTop_toTopOf="@+id/checkoutBtn" />
+
+    <TextView
+        android:id="@+id/valueID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:text="@string/value"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalID"
+        app:layout_constraintTop_toTopOf="@+id/totalID"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vegesED" />
+
+    <CheckBox
+        android:id="@+id/milkCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/eggED"
+        app:layout_constraintEnd_toEndOf="@+id/view" />
+
+    <CheckBox
+        android:id="@+id/eggCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/milkCB"
+        app:layout_constraintTop_toBottomOf="@+id/milkCB" />
+
+    <CheckBox
+        android:id="@+id/beefCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        app:layout_constraintStart_toStartOf="@+id/eggCB"
+        app:layout_constraintTop_toTopOf="@+id/eggCB" />
+
+    <CheckBox
+        android:id="@+id/sodaCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/beefCB"
+        app:layout_constraintTop_toBottomOf="@+id/beefCB" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="@string/soda"
+        app:layout_constraintStart_toStartOf="@+id/beefID"
+        app:layout_constraintTop_toBottomOf="@+id/beefID" />
+
+    <CheckBox
+        android:id="@+id/biscuitCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        app:layout_constraintStart_toStartOf="@+id/sodaCB"
+        app:layout_constraintTop_toTopOf="@+id/sodaCB" />
+
+    <EditText
+        android:id="@+id/biscuitED"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/biscuitCB"
+        app:layout_constraintEnd_toEndOf="@+id/fruitsED"
+        app:layout_constraintStart_toStartOf="@+id/fruitsED"
+        app:layout_constraintTop_toTopOf="@+id/biscuitCB" />
+
+    <EditText
+        android:id="@+id/milkED"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/eggID"
+        app:layout_constraintEnd_toEndOf="@+id/eggED"
+        app:layout_constraintStart_toStartOf="@+id/eggED"
+        app:layout_constraintTop_toTopOf="@+id/qtyID" />
+
+    <EditText
+        android:id="@+id/beefED"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="101dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/biscuitCB"
+        app:layout_constraintEnd_toEndOf="@+id/sodaED"
+        app:layout_constraintStart_toStartOf="@+id/sodaED"
+        app:layout_constraintTop_toTopOf="@+id/milkCB" />
+
+    <EditText
+        android:id="@+id/sodaED"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/biscuitED"
+        app:layout_constraintEnd_toEndOf="@+id/biscuitED"
+        app:layout_constraintStart_toStartOf="@+id/biscuitED"
+        app:layout_constraintTop_toTopOf="@+id/beefED" />
+
+    <EditText
+        android:id="@+id/fruitsED"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="136dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/valueID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/beefCB" />
+
+    <EditText
+        android:id="@+id/vegesED"
+        android:layout_width="30dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="127dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/totalID"
+        app:layout_constraintEnd_toStartOf="@+id/fruitsCB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/qtyID"
+        app:layout_constraintTop_toTopOf="@+id/sodaED"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/eggED"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="81dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/beefED"
+        app:layout_constraintStart_toStartOf="@+id/beefED"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameID" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/biscuit"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <CheckBox
+        android:id="@+id/fruitsCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="@+id/biscuitCB"
+        app:layout_constraintTop_toTopOf="@+id/biscuitCB" />
+
+    <CheckBox
+        android:id="@+id/vegesCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="@+id/fruitsCB"
+        app:layout_constraintTop_toTopOf="@+id/fruitsCB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

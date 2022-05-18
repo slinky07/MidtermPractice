@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MidtermPractice</string>
+    <string name="itemName">Item Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="add">Add</string>
+    <string name="checkout">CHECK OUT</string>
+    <string name="total">Total\t\t\t\t$</string>
+    <string name="milk">Milk 3$</string>
+    <string name="egg">Eggs 2$</string>
+    <string name="beef">Beef 23$</string>
+    <string name="soda">Soda 1$</string>
+    <string name="biscuit">Biscuits 2.5$</string>
+    <string name="fruit">Fruits 6.5$</string>
+    <string name="veges">Veges 4$</string>
+    <string name="value">\t</string>
+</resources>
